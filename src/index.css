@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'SBAggro', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+ul, ol, dl {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
