@@ -4,7 +4,7 @@ import '../src/assets/fonts/fonts.css';
 import ListItem from "./components/ListItem"
 
 function App() {
-  const imagePath = "/src/assets/images/"; // 경로를 변수로 설정
+  const imagePath = "/assets/images/"; // 경로를 변수로 설정
   
   return (
     <main>
