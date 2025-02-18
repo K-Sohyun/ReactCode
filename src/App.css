@@ -75,7 +75,7 @@ main {
 
 @media all and (max-width: 1024px) {
   .item { 
-    padding: 30px 15px 40px;
+    padding: 40px 15px;
   }
 
   .item__name {
@@ -100,7 +100,21 @@ main {
 }
 
 @media all and (max-width: 768px) {
+  .character-list {
+    padding: 20px;
+  }
+
   .item { 
     width: calc(50% - 10px);
+  }
+
+  .item__name {
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 380px) {
+  .item { 
+    width: 100%;
   }
 }

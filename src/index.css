@@ -14,6 +14,8 @@ body {
   font-size: 13px;
   font-weight: 300;
   line-height: 1.2;
+  min-width: 280px;
+  overflow-x: hidden;
 }
 
 ul, ol, dl {
