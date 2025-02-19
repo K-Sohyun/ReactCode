@@ -12,7 +12,7 @@ function ListButton({ itemName }) {
 
     return (
         <span className="item__likes">
-            <button className="likes__btn" onClick={() => setLikes(likes + 1)}>❤</button>
+            <button className="likes__btn" onClick={() => setLikes(likes + 1)}>&#10084;</button>
             <b className="likes__count">{likes}</b>
         </span>
     );
