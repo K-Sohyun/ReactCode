@@ -12,7 +12,9 @@ function ListButton({ itemName }) {
 
     return (
         <span className="item__likes">
-            <button className="likes__btn" onClick={() => setLikes(likes + 1)}>&#10084;</button>
+            <button className="likes__btn" onClick={() => setLikes(likes + 1)}>
+                <img src="/assets/images/ico_like.png" alt="좋아요" />
+            </button>
             <b className="likes__count">{likes}</b>
         </span>
     );
