@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 
 function ListButton({ itemName }) {
-    // 로컬 스토리지에서 초기 값 불러오기
+    // 로컬스토리지에서 초기 값 불러오기
     const storedLikes = localStorage.getItem(itemName);
-    const [likes, setLikes] = useState(storedLikes ? parseInt(storedLikes) : 0);
+    const [likes, setLikes] = useState(storedLikes ? parseInt(storedLikes) : 0); // 로컬스토리지는 문자열만 저장 가능, 정수로 변환 parseInt()
 
     useEffect(() => {
-        // 좋아요 값이 변경될 때마다 로컬 스토리지에 저장
+        // likes 값이 변경될 때마다 로컬스토리지에 저장 (key, value)
         localStorage.setItem(itemName, likes);
     }, [likes, itemName]);
 
